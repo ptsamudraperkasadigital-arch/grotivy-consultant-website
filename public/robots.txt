@@ -1,0 +1,16 @@
+# Robots.txt — Grotivy Consultant
+# https://grotivyconsultant.com
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow utility/private pages
+Disallow: /404
+Disallow: /tracking
+
+# Sitemap location
+Sitemap: https://grotivyconsultant.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
