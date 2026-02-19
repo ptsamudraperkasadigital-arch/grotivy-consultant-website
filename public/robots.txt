@@ -1,5 +1,5 @@
 # Robots.txt — Grotivy Consultant
-# https://https://www.grotivyconsultant.my.id/
+# https://www.grotivyconsultant.my.id//
 
 # Allow all crawlers
 User-agent: *
