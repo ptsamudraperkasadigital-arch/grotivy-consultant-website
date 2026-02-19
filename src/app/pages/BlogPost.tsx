@@ -12,6 +12,7 @@ const categoryColors: Record<string, string> = {
   "Legalitas Bisnis": "bg-blue-100 text-blue-700",
   "HKI & Sertifikasi": "bg-purple-100 text-purple-700",
   "Perizinan & Regulasi": "bg-orange-100 text-orange-700",
+  "Perpajakan": "bg-red-100 text-red-700",
   "Tips Bisnis": "bg-emerald-100 text-emerald-700",
 };
 
