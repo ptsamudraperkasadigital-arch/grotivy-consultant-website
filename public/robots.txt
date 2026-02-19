@@ -1,5 +1,5 @@
 # Robots.txt — Grotivy Consultant
-# https://www.grotivyconsultant.my.id//
+# https://www.grotivyconsultant.my.id/
 
 # Allow all crawlers
 User-agent: *
@@ -10,7 +10,7 @@ Disallow: /404
 Disallow: /tracking
 
 # Sitemap location
-Sitemap: https://www.grotivyconsultant.my.idsitemap.xml
+Sitemap: https://www.grotivyconsultant.my.id/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

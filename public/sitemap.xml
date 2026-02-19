@@ -6,7 +6,7 @@
 
   <!-- Beranda — Prioritas tertinggi -->
   <url>
-    <loc>https://www.grotivyconsultant.my.id</loc>
+    <loc>https://www.grotivyconsultant.my.id/</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Semua Layanan -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idall-services</loc>
+    <loc>https://www.grotivyconsultant.my.id/all-services</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -22,7 +22,7 @@
 
   <!-- Pendirian Perusahaan — Layanan unggulan -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idpendirian-perusahaan</loc>
+    <loc>https://www.grotivyconsultant.my.id/pendirian-perusahaan</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
@@ -30,7 +30,7 @@
 
   <!-- Publikasi Media & PR -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idservices/media-publication</loc>
+    <loc>https://www.grotivyconsultant.my.id/services/media-publication</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -38,7 +38,7 @@
 
   <!-- Tentang Kami -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idabout</loc>
+    <loc>https://www.grotivyconsultant.my.id/about</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -46,7 +46,7 @@
 
   <!-- Kemitraan & B2B -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idpartnership</loc>
+    <loc>https://www.grotivyconsultant.my.id/partnership</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -54,7 +54,7 @@
 
   <!-- Karir -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idcareer</loc>
+    <loc>https://www.grotivyconsultant.my.id/career</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -62,7 +62,7 @@
 
   <!-- Kontak -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idcontact</loc>
+    <loc>https://www.grotivyconsultant.my.id/contact</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
@@ -70,7 +70,7 @@
 
   <!-- Layanan (semua kategori) -->
   <url>
-    <loc>https://www.grotivyconsultant.my.idservices</loc>
+    <loc>https://www.grotivyconsultant.my.id/services</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
