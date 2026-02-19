@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
-export const SITE_URL = "https://grotivyconsultant.com"; // Ganti dengan domain Anda yang sebenarnya
+export const SITE_URL = "https://https://www.grotivyconsultant.my.id/"; // Ganti dengan domain Anda yang sebenarnya
 export const SITE_NAME = "Grotivy Consultant";
 export const DEFAULT_DESCRIPTION =
   "Grotivy Consultant — One Stop Business Solution. Layanan konsultan bisnis terpercaya: pendirian PT/CV, perizinan, HKI, sertifikasi HALAL, perpajakan, dan 50+ layanan bisnis lainnya. Melayani 500+ klien seluruh Indonesia sejak 2022.";
