@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-const productImage = "/produk.jpg";
+import productImage from "figma:asset/0d99009c4a41b510ed99b042e9f383b47ee766dc.png";
 const heroTestimonialImage = "/testimoni-kurniawan.jpg";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
