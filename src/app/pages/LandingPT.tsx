@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import productImage from "figma:asset/da1b49f9960e0a3796466db9d4cca7eb649f3e14.png";
-import heroTestimonialImage from "figma:asset/f354a57d4cea842fc405a0346769996952ba7c21.png";
+import productImage from "figma:asset/0d99009c4a41b510ed99b042e9f383b47ee766dc.png";
+import heroTestimonialImage from "figma:asset/d5c6d7021a9a9e9eb12d0cf4fa9c78ee0e506e4d.png";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
 declare global {
@@ -969,6 +969,92 @@ export function LandingPT() {
         </div>
       </section>
 
+
+      {/* ── KLIEN KAMI — MARQUEE ── */}
+      <section data-track-section="klien" className="py-14 bg-white border-y border-gray-100 overflow-hidden">
+        <style>{`
+          @keyframes marquee-ltr {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          @keyframes marquee-rtl {
+            0%   { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+          }
+          .marquee-ltr { animation: marquee-ltr 28s linear infinite; }
+          .marquee-rtl { animation: marquee-rtl 28s linear infinite; }
+          .marquee-ltr:hover, .marquee-rtl:hover { animation-play-state: paused; }
+        `}</style>
+
+        <div className="text-center mb-10">
+          <span className="text-[#5FBDBE] font-bold uppercase tracking-wider text-sm">Klien Kami</span>
+          <h2 className="text-2xl font-black text-gray-900 mt-1">
+            Dipercaya oleh Perusahaan Terkemuka di Indonesia
+          </h2>
+        </div>
+
+        {/* Baris 1 — kiri ke kanan */}
+        <div className="relative mb-4 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-4 marquee-ltr w-max">
+            {[
+              "PT Sumber Makmur Indonesia",
+              "PT Ratu Properti Indonesia",
+              "PT Mahadaya Putra Energi",
+              "PT ADA Kargo Logistik",
+              "PT ITMVISION Digital Technology",
+              "PT Adhitama Dwijaya Emerald",
+              "PT Agriintech Renewable Energy",
+              "PT Sumber Makmur Indonesia",
+              "PT Ratu Properti Indonesia",
+              "PT Mahadaya Putra Energi",
+              "PT ADA Kargo Logistik",
+              "PT ITMVISION Digital Technology",
+              "PT Adhitama Dwijaya Emerald",
+              "PT Agriintech Renewable Energy",
+            ].map((name, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 bg-gradient-to-br from-[#f0fafa] to-white border border-[#5FBDBE]/30 rounded-xl px-5 py-3 shadow-sm"
+              >
+                <span className="text-sm font-bold text-[#2C5F6F] whitespace-nowrap">{name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Baris 2 — kanan ke kiri */}
+        <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-4 marquee-rtl w-max">
+            {[
+              "PT Sarana Jaya Mandiri Electrik",
+              "PT Celebes Lintas Media",
+              "PT Nayaka Citra Kreasindo",
+              "PT Love Bali Holiday",
+              "PT Adhi Karya Utama",
+              "PT Samudra Perkasa Digital",
+              "Dan 500+ Klien Lainnya",
+              "PT Sarana Jaya Mandiri Electrik",
+              "PT Celebes Lintas Media",
+              "PT Nayaka Citra Kreasindo",
+              "PT Love Bali Holiday",
+              "PT Adhi Karya Utama",
+              "PT Samudra Perkasa Digital",
+              "Dan 500+ Klien Lainnya",
+            ].map((name, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 bg-gradient-to-br from-[#2C5F6F]/5 to-white border border-[#2C5F6F]/20 rounded-xl px-5 py-3 shadow-sm"
+              >
+                <span className="text-sm font-bold text-[#2C5F6F] whitespace-nowrap">{name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <p className="text-center text-gray-400 text-xs mt-8">
+          🏆 500+ perusahaan dari berbagai industri di seluruh Indonesia telah mempercayai Grotivy Consultant
+        </p>
+      </section>
 
       {/* ── COMPLETE CHECKLIST ── */}
       <section data-track-section="checklist" className="py-20 bg-gradient-to-br from-gray-50 to-white">
