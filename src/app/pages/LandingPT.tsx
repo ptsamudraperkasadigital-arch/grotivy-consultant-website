@@ -134,18 +134,21 @@ export function LandingPT() {
       company: "PT SINERGI INFINITI SEJAHTERA BERSAMA",
       text: "Pelayanan grotivy sangat cepat dan memuaskan. Tidak menyangka proses bisa secepat ini!",
       rating: 5,
+      photo: "/testimoni-kurniawan.jpg",
     },
     {
       name: "Bpk. Ahmad Fauz",
       company: "PT ANDALAS INTI NUSANTARA",
       text: "Dokumen sampai, Mitra yang Amanah dan menjadi solusi untuk pengurusan berbagai dokumen, cepat dan akurat.",
       rating: 5,
+      photo: "/testimoni-fauz.jpg",
     },
     {
       name: "Bpk. Isro Doni",
       company: "PT HASANAH JAYA BERSAMA",
       text: "Dokumen lengkap dan sampai tujuan dengan amanah. Rekomendasi banget untuk yang mau buat PT!",
       rating: 5,
+      photo: "/testimoni-isrodni.jpg",
     },
   ];
 
@@ -347,17 +350,30 @@ export function LandingPT() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
+                className="bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow overflow-hidden"
               >
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: t.rating }).map((_, j) => (
-                    <Star key={j} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
+                {/* Foto Testimoni */}
+                <div className="relative w-full h-52 overflow-hidden bg-gray-100">
+                  <img
+                    src={t.photo}
+                    alt={`Testimoni ${t.name}`}
+                    className="w-full h-full object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute bottom-3 left-3 flex gap-1">
+                    {Array.from({ length: t.rating }).map((_, j) => (
+                      <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400 drop-shadow" />
+                    ))}
+                  </div>
                 </div>
-                <p className="text-gray-700 italic mb-5 leading-relaxed">"{t.text}"</p>
-                <div className="border-t pt-4">
-                  <p className="font-bold text-[#2C5F6F]">{t.name}</p>
-                  <p className="text-sm text-gray-500">{t.company}</p>
+
+                {/* Konten */}
+                <div className="p-6">
+                  <p className="text-gray-700 italic mb-5 leading-relaxed text-sm">"{t.text}"</p>
+                  <div className="border-t pt-4">
+                    <p className="font-bold text-[#2C5F6F]">{t.name}</p>
+                    <p className="text-sm text-gray-500">{t.company}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
