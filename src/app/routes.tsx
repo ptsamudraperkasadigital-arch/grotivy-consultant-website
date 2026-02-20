@@ -17,6 +17,9 @@ const Career = lazy(() => import("./pages/Career").then(m => ({ default: m.Caree
 const Partnership = lazy(() => import("./pages/Partnership").then(m => ({ default: m.Partnership })));
 const Team = lazy(() => import("./pages/Team").then(m => ({ default: m.Team })));
 const AdminTracking = lazy(() => import("./pages/AdminTracking").then(m => ({ default: m.AdminTracking })));
+const Blog = lazy(() => import("./pages/Blog").then(m => ({ default: m.Blog })));
+const BlogPost = lazy(() => import("./pages/BlogPost").then(m => ({ default: m.BlogPost })));
+const LandingPT = lazy(() => import("./pages/LandingPT").then(m => ({ default: m.LandingPT })));
 
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-white">
@@ -31,6 +34,15 @@ export const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <AdminTracking />
+      </Suspense>
+    ),
+  },
+  {
+    // Landing Page PT — standalone tanpa navbar/footer
+    path: "/promo-pt",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <LandingPT />
       </Suspense>
     ),
   },
@@ -81,6 +93,14 @@ export const router = createBrowserRouter([
       {
         path: "team",
         element: <Team />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
+      },
+      {
+        path: "blog/:slug",
+        element: <BlogPost />,
       },
       {
         path: "services/:serviceId",

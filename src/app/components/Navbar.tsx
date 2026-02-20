@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router";
-import { Menu, X, ChevronDown, MessageCircle, Building2, Newspaper, LayoutGrid, ArrowRight, Radio, GraduationCap } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle, Building2, Newspaper, BookOpen, LayoutGrid, ArrowRight, Radio, GraduationCap } from "lucide-react";
 import logo from "figma:asset/135f0bbbb51f7cb406b971dd0e7b14505df17d22.png";
 
 const WA_NUMBER = "6283861537366";
@@ -190,6 +190,19 @@ export function Navbar() {
               Kontak
             </Link>
 
+            {/* Blog */}
+            <Link
+              to="/blog"
+              className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
+                location.pathname.startsWith("/blog")
+                  ? "text-white bg-gradient-to-r from-[#5FBDBE] to-[#2C5F6F]"
+                  : "text-[#2C5F6F] hover:bg-gray-100"
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              Blog
+            </Link>
+
             {/* Track Project — CTA pill khusus */}
             <Link
               to="/tracking"
@@ -301,6 +314,16 @@ export function Navbar() {
               }`}
             >
               Kontak
+            </Link>
+
+            <Link
+              to="/blog"
+              className={`flex items-center gap-2 py-3 px-4 text-sm font-medium rounded-lg transition-all duration-300 ${
+                location.pathname.startsWith("/blog") ? "text-white bg-gradient-to-r from-[#5FBDBE] to-[#2C5F6F]" : "text-[#2C5F6F] hover:bg-gray-100"
+              }`}
+            >
+              <BookOpen className="w-4 h-4" />
+              Blog
             </Link>
 
             <Link
