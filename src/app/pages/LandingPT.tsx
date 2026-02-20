@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import productImage from "figma:asset/0d99009c4a41b510ed99b042e9f383b47ee766dc.png";
-import heroTestimonialImage from "figma:asset/d5c6d7021a9a9e9eb12d0cf4fa9c78ee0e506e4d.png";
+const productImage = "/produk.jpg";
+const heroTestimonialImage = "/testimoni-kurniawan.jpg";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
 declare global {
