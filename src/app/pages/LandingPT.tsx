@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-// Letakkan file "Produk.jpg" di folder /public, lalu path ini akan otomatis terbaca
+// Letakkan Produk.jpg dan testimoni-kurniawan.jpg di folder /public (root project)
 const productImage = "/Produk.jpg";
-// Letakkan file "testimoni-kurniawan.jpg" di folder /public
 const heroTestimonialImage = "/testimoni-kurniawan.jpg";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
