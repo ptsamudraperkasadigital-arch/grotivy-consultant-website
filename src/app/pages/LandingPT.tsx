@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import productImage from "figma:asset/da1b49f9960e0a3796466db9d4cca7eb649f3e14.png";
+import heroTestimonialImage from "figma:asset/f354a57d4cea842fc405a0346769996952ba7c21.png";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
 declare global {
@@ -63,11 +65,15 @@ function trackLead() {
 function trackScrollSection(sectionName: string) {
   if (typeof window === "undefined") return;
 
+  // ── Meta Pixel — Custom Event
   if (window.fbq) {
     window.fbq("trackCustom", "ScrollSection", { section: sectionName });
     console.debug(`[Meta Pixel] ScrollSection → ${sectionName}`);
   }
 
+  // ── Microsoft Clarity — dual approach:
+  //    (1) clarity("event", ...) : tampil di Custom Events Clarity
+  //    (2) clarity("set", ...)   : tampil sebagai Custom Tag → bisa difilter di dashboard
   if (window.clarity) {
     window.clarity("event", `scroll_${sectionName}`);
     window.clarity("set", "scroll_section", sectionName);
@@ -267,7 +273,6 @@ export function LandingPT() {
 
   const checklist = [
     { text: "Cek Nama PT Gratis", highlight: false },
-    { text: "Sertifikat Pendirian PT (Akta Notaris)", highlight: false },
     { text: "SK Kemenkumham (Resmi Berbadan Hukum)", highlight: false },
     { text: "NIB — Izin Usaha Resmi", highlight: false },
     { text: "NPWP Perusahaan", highlight: false },
@@ -374,10 +379,15 @@ export function LandingPT() {
           >
             {/* Dokumen mockup card */}
             <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#5FBDBE]/40">
+              {/* Testimonial header */}
+              <div className="bg-[#075e54] px-4 py-2 flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-green-400" />
+                <span className="text-white text-xs font-semibold">WhatsApp — Testimoni Klien ⭐</span>
+              </div>
               <img
-                src="https://images.unsplash.com/photo-1681505526188-b05e68c77582?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGxlZ2FsJTIwZG9jdW1lbnQlMjBjZXJ0aWZpY2F0ZSUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzE1ODc0MTl8MA&ixlib=rb-4.1.0&q=80&w=600"
-                alt="Dokumen PT Resmi"
-                className="w-full h-48 object-cover object-center"
+                src={heroTestimonialImage}
+                alt="Testimoni Klien Grotivy - Dokumen legalitas sudah diterima"
+                className="w-full object-cover"
               />
               <div className="p-5 text-left bg-white">
                 <div className="flex items-center gap-2 mb-3">
@@ -391,7 +401,6 @@ export function LandingPT() {
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   {[
-                    { label: "Akta Notaris", status: "✅" },
                     { label: "SK Kemenkumham", status: "✅" },
                     { label: "NIB OSS", status: "✅" },
                     { label: "NPWP Perusahaan", status: "✅" },
@@ -436,6 +445,10 @@ export function LandingPT() {
               <li className="flex items-start gap-2">
                 <span className="text-red-400 font-black mt-0.5">✗</span>
                 <span>Aset & harta keluarga <strong className="text-white">ikut terseret</strong> jika ada masalah hutang bisnis</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 font-black mt-0.5">✗</span>
+                <span>Tidak bisa mengajukan <strong className="text-white">PINJAMAN BANK</strong> — bisnis Anda susah berkembang karena bank butuh legalitas</span>
               </li>
             </ul>
           </motion.div>
@@ -531,7 +544,7 @@ export function LandingPT() {
             <h2 className="text-3xl font-black text-gray-900 mt-2">
               Yang Akan Anda Dapatkan Jika Bisnis
               <br />
-              <span className="text-[#2C5F6F]">Sudah Berbadan Hukum Resmi (PT)</span>
+              <span className="text-[#2C5F6F]">Sudah Berbadan Hukum Resmi (PT) Perorangan</span>
             </h2>
           </div>
 
@@ -610,30 +623,12 @@ export function LandingPT() {
                   <div className="ml-auto bg-green-400 text-white text-xs font-black px-2 py-1 rounded-full">RESMI</div>
                 </div>
 
-                {/* Foto */}
+                {/* Foto Produk Asli */}
                 <img
-                  src="https://images.unsplash.com/photo-1578914737197-27436b786ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG93bmVyJTIwZW50cmVwcmVuZXVyJTIwc3VjY2VzcyUyMHByb2Zlc3Npb25hbCUyMGluZG9uZXNpYXxlbnwxfHx8fDE3NzE1ODc2Nzh8MA&ixlib=rb-4.1.0&q=80&w=600"
-                  alt="Pengusaha Sukses"
-                  className="w-full h-44 object-cover object-top"
+                  src={productImage}
+                  alt="Paket Pendirian PT Lengkap - SK Kemenkumham, NIB, NPWP, Rekening Perusahaan"
+                  className="w-full object-cover"
                 />
-
-                {/* Dokumen checklist */}
-                <div className="p-5 bg-white">
-                  <div className="grid grid-cols-2 gap-2 text-xs">
-                    {[
-                      "✅ Akta Notaris",
-                      "✅ SK Kemenkumham",
-                      "✅ NIB OSS",
-                      "✅ NPWP Badan",
-                      "✅ Rekening PT",
-                      "🚚 Kirim ke Rumah",
-                    ].map((doc) => (
-                      <div key={doc} className="flex items-center gap-1.5 bg-gray-50 rounded-lg px-3 py-2 font-medium text-gray-700">
-                        {doc}
-                      </div>
-                    ))}
-                  </div>
-                </div>
               </div>
 
               {/* Floating label */}
@@ -1015,7 +1010,6 @@ export function LandingPT() {
               {/* Dokumen cards mockup */}
               <div className="mt-4 grid grid-cols-2 gap-3">
                 {[
-                  { emoji: "📋", title: "Akta Notaris", subtitle: "Sertifikat Pendirian PT", badge: "RESMI", badgeColor: "bg-blue-600" },
                   { emoji: "🏛️", title: "SK Kemenkumham", subtitle: "Berbadan Hukum Resmi", badge: "LEGAL", badgeColor: "bg-red-600" },
                   { emoji: "🆔", title: "NIB & NPWP", subtitle: "Izin Usaha + Pajak", badge: "OSS", badgeColor: "bg-green-600" },
                   { emoji: "🏦", title: "Rekening PT", subtitle: "Rekening Perusahaan Aktif", badge: "BANK", badgeColor: "bg-purple-600" },
