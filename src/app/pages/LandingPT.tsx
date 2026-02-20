@@ -62,13 +62,18 @@ function trackLead() {
 // ─── SCROLL SECTION TRACKER ────────────────────────────────────────────────────
 function trackScrollSection(sectionName: string) {
   if (typeof window === "undefined") return;
-  // Meta Pixel — Custom Event
+
   if (window.fbq) {
     window.fbq("trackCustom", "ScrollSection", { section: sectionName });
+    console.debug(`[Meta Pixel] ScrollSection → ${sectionName}`);
   }
-  // Microsoft Clarity — Custom Event
+
   if (window.clarity) {
     window.clarity("event", `scroll_${sectionName}`);
+    window.clarity("set", "scroll_section", sectionName);
+    console.debug(`[Clarity] event=scroll_${sectionName} | tag scroll_section=${sectionName}`);
+  } else {
+    console.warn(`[Clarity] window.clarity belum tersedia saat section="${sectionName}" terdeteksi`);
   }
 }
 
