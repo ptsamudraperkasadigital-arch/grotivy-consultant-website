@@ -626,7 +626,7 @@ export function LandingPT() {
 
                 {/* Foto Produk Asli */}
                 <img
-                  src={productImage}
+                  src=/Produk.jpg
                   alt="Paket Pendirian PT Lengkap - SK Kemenkumham, NIB, NPWP, Rekening Perusahaan"
                   className="w-full object-cover"
                 />
