@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import productImage from "figma:asset/0d99009c4a41b510ed99b042e9f383b47ee766dc.png";
+// Letakkan file "Produk.jpg" di folder /public, lalu path ini akan otomatis terbaca
+const productImage = "/Produk.jpg";
+// Letakkan file "testimoni-kurniawan.jpg" di folder /public
 const heroTestimonialImage = "/testimoni-kurniawan.jpg";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
