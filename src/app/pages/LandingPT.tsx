@@ -231,7 +231,7 @@ export function LandingPT() {
       {/* ── ANNOUNCEMENT BAR ── */}
       <div className="bg-red-600 text-white text-center py-3 px-4 sticky top-0 z-50">
         <p className="text-sm font-semibold animate-pulse">
-          🔥 PROMO PRA-RAMADHAN 2026 — Diskon Besar-Besaran! Berakhir 28 Feb 2026 &nbsp;|&nbsp;
+          🔥 PROMO RAMADHAN 2026 — Diskon Besar-Besaran! Berakhir 28 Mar 2026 &nbsp;|&nbsp;
           <a href="https://wa.me/6283861537366" target="_blank" rel="noopener noreferrer" className="underline font-black">
             Hubungi Kami Sekarang
           </a>
@@ -581,7 +581,7 @@ export function LandingPT() {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center gap-2 bg-red-500 text-white px-5 py-2 rounded-full text-sm font-black mb-6 animate-pulse">
-              🔥 PROMO SPESIAL PRA-RAMADHAN 2026
+              🔥 PROMO SPESIAL RAMADHAN 2026
             </div>
 
             <h2 className="text-3xl font-black mb-2">Berapa Harganya?</h2>
