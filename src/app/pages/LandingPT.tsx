@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-// Letakkan Produk.jpg dan testimoni-kurniawan.jpg di folder /public (root project)
-const productImage = "/Produk.jpg";
+// Letakkan testimoni-kurniawan.jpg di folder /public (root project)
 const heroTestimonialImage = "/testimoni-kurniawan.jpg";
 
 // ─── META PIXEL ────────────────────────────────────────────────────────────────
@@ -223,28 +222,28 @@ export function LandingPT() {
   const benefits = [
     {
       icon: <TrendingUp className="w-7 h-7" />,
-      title: "Kepercayaan Klien Melonjak Seketika",
-      desc: "Customer jauh lebih yakin transfer ke rekening atas nama PT dibandingkan rekening pribadi. Kredibilitas langsung naik kelas.",
+      title: "Rekening PT = Kepercayaan Instan dari Klien Besar",
+      desc: "Klien korporat & instansi pemerintah hanya mau transfer ke rekening atas nama PT — bukan rekening pribadi. Punya PT berarti pintu proyek besar langsung terbuka.",
     },
     {
       icon: <Building2 className="w-7 h-7" />,
-      title: "Akses Prioritas Tender Pemerintah & Korporat",
-      desc: "Pintu gerbang proyek besar yang mewajibkan NIB & SK Kemenkumham kini terbuka lebar untuk bisnis Anda.",
+      title: "Tender & Kontrak Pemerintah Kini Bisa Anda Menangkan",
+      desc: "NIB + SK Kemenkumham adalah 'tiket masuk' wajib untuk ikut tender. Tanpa itu, sebagus apapun penawaran Anda — proposal langsung ditolak di meja pertama.",
     },
     {
       icon: <Shield className="w-7 h-7" />,
-      title: "Aset Pribadi 100% Aman & Terlindungi",
-      desc: "Harta keluarga Anda tidak akan terseret jika terjadi risiko utang piutang bisnis (Limited Liability).",
+      title: "Rumah & Tabungan Keluarga Tidak Ikut Terseret Risiko Bisnis",
+      desc: "PT memberikan perlindungan hukum Limited Liability — artinya jika bisnis menghadapi masalah utang, harta pribadi dan keluarga Anda 100% aman di mata hukum.",
     },
     {
       icon: <Zap className="w-7 h-7" />,
-      title: "Validasi untuk Suntikan Modal",
-      desc: "Investor dan Bank lebih mudah mencairkan dana untuk bisnis dengan legalitas yang jelas dan terdokumentasi.",
+      title: "Pinjaman Modal Bank Lebih Mudah Cair",
+      desc: "Bank membutuhkan badan hukum yang jelas sebelum mencairkan KUR atau kredit usaha. PT dengan dokumen lengkap adalah syarat utama yang meningkatkan peluang approval.",
     },
     {
       icon: <Award className="w-7 h-7" />,
-      title: "Bisnis Bisa Diwariskan & Auto-Pilot",
-      desc: "Langkah awal membangun sistem perusahaan yang profesional, bukan sekadar 'One Man Show' yang bergantung satu orang.",
+      title: "Bisnis Legal, Profesional, dan Siap Diwariskan",
+      desc: "Bangun aset bisnis yang nyata — bukan sekadar 'usaha sampingan'. PT menjadi warisan berharga yang bisa diteruskan ke generasi berikutnya secara resmi.",
     },
   ];
 
@@ -292,28 +291,28 @@ export function LandingPT() {
 
   const faqs = [
     {
-      q: "Kenapa harus PT, tidak CV saja?",
-      a: "PT merupakan badan usaha yang memiliki keuntungan jauh lebih besar dibanding CV. PT memiliki kredibilitas tinggi di mata klien dan investor, memungkinkan partisipasi dalam tender pemerintah, lebih dipercaya bank untuk pinjaman modal, dan memiliki akses yang lebih luas untuk kegiatan bisnis apapun. PT juga memberikan perlindungan aset pribadi yang tidak dimiliki CV.",
+      q: "Berapa total biaya yang saya bayar? Apakah ada biaya tersembunyi?",
+      a: "Harga yang tertera di halaman ini adalah harga FINAL all-in. Tidak ada biaya tambahan, tidak ada tagihan kejutan di tengah proses. Sudah termasuk biaya notaris, biaya pemerintah (PNBP AHU), NIB, NPWP, dan ongkir dokumen fisik ke seluruh Indonesia. Kami percaya transparansi adalah pondasi kepercayaan — dan kami sudah buktikan itu ke 500+ klien kami.",
     },
     {
-      q: "Apakah dokumen fisik akan dikirim ke rumah saya?",
-      a: "Ya, jelas! Seluruh dokumen fisik akan kami kirimkan ke alamat rumah atau kantor Anda secara GRATIS tanpa biaya pengiriman tambahan. Selain itu, kami juga akan mengirimkan seluruh dokumen dalam bentuk softcopy/digital ke email Anda.",
+      q: "Benarkah proses selesai hanya 1–2 hari? Saya pikir biasanya berbulan-bulan.",
+      a: "Benar! Dengan sistem online terpadu (AHU Online + OSS RBA), proses administrasi yang dulu berbulan-bulan kini tuntas dalam 1–2 hari kerja. Klien kami — termasuk Bpk. Kurniawan — sudah membuktikannya. Dokumen fisik akan dikirim ke alamat Anda dalam 3–7 hari kerja setelah proses online selesai, tergantung lokasi.",
     },
     {
-      q: "Apakah ini penipuan? Kok harganya murah banget?",
-      a: "Kami menjamin 100% legal dan sah di mata pemerintah. Dalam setiap transaksi, kami hanya menggunakan rekening resmi perusahaan BCA No. 4452287432 atas nama PT Samudra Perkasa Digital — yang pasti terjamin keamanannya. Visi Grotivy adalah membantu meningkatkan ekonomi Indonesia dengan harga yang terjangkau untuk para pengusaha.",
+      q: "Saya tidak paham teknologi (gaptek). Apakah saya bisa tetap mengurus PT ini?",
+      a: "Justru karena Anda sibuk dan tidak mau repot, layanan kami ada untuk Anda! Anda tidak perlu tahu satu pun istilah teknis. Cukup WhatsApp kami, tim kami akan memandu langkah demi langkah — dari pengisian data sederhana hingga dokumen jadi dan dikirim ke rumah. Tidak ada yang perlu Anda akses sendiri.",
     },
     {
-      q: "Apakah bisa sekalian buat rekening perusahaan?",
-      a: "Ya, bisa! Pembuatan rekening perusahaan sudah termasuk dalam paket layanan kami. Tim kami akan memandu proses pembukaan rekening atas nama PT Anda.",
+      q: "Kenapa bayar setelah jadi? Apa jaminannya kalau saya tidak bayar?",
+      a: "Justru itu kelebihan kami — kami percaya dulu pada Anda karena kami yakin dengan kualitas kerja kami. Anda cukup berkomitmen secara lisan, kami kerjakan, dan bayar hanya setelah PT benar-benar jadi. Ini membuktikan kami bukan penipu. Rekening pembayaran resmi kami: BCA No. 4452287432 a/n PT Samudra Perkasa Digital — bisa Anda verifikasi sendiri.",
     },
     {
-      q: "Berapa lama proses pendirian PT-nya?",
-      a: "Proses pendirian PT kami selesaikan dalam 1-2 hari kerja untuk proses administrasi online (AHU, NIB, NPWP). Dokumen fisik akan tiba di tangan Anda dalam 3-7 hari kerja setelahnya tergantung lokasi pengiriman.",
+      q: "Apa bedanya PT Perorangan dengan PT Biasa? Mana yang cocok untuk saya?",
+      a: "PT Perorangan cocok untuk Anda yang baru mulai atau berbisnis sendiri — modal minimal, proses lebih cepat, tanpa kebutuhan minimal 2 pendiri. PT Biasa cocok jika Anda sudah ada mitra dan ingin bisnis dengan skala lebih besar. Tim konsultan kami akan bantu menentukan pilihan terbaik sesuai kondisi bisnis Anda — GRATIS, tanpa bayar.",
     },
     {
-      q: "Apakah ada biaya tersembunyi setelah bayar?",
-      a: "Tidak ada sama sekali! Harga yang tertera sudah all-in termasuk biaya notaris, biaya pemerintah (PNBP), dan biaya pengiriman dokumen. Anda hanya bayar satu kali setelah PT jadi.",
+      q: "Kalau PT sudah jadi, apakah saya langsung bisa ikut tender pemerintah?",
+      a: "Hampir! Setelah PT jadi (SK Kemenkumham + NIB + NPWP), langkah selanjutnya biasanya adalah mendaftar di platform LPSE (untuk tender pemerintah) dan memastikan KBLI bisnis Anda sesuai. Kami juga siap memandu proses ini sebagai bagian dari konsultasi bonus yang sudah termasuk dalam paket.",
     },
   ];
 
@@ -323,9 +322,9 @@ export function LandingPT() {
       {/* ── ANNOUNCEMENT BAR ── */}
       <div className="bg-red-600 text-white text-center py-3 px-4 sticky top-0 z-50">
         <p className="text-sm font-semibold animate-pulse">
-          🔥 PROMO RAMADHAN 2026 — Diskon Besar-Besaran! &nbsp;|&nbsp;
+          🔥 PROMO RAMADHAN 2026 — Hemat 73%! Bayar Setelah PT Jadi. Kuota Terbatas! &nbsp;|&nbsp;
           <a href="https://wa.me/6283861537366" target="_blank" rel="noopener noreferrer" onClick={trackLead} className="underline font-black">
-            Hubungi Kami Sekarang
+            Amankan Slot Saya →
           </a>
         </p>
       </div>
@@ -347,15 +346,20 @@ export function LandingPT() {
             animate={{ opacity: 1, y: 0 }}
           >
             <div className="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-4 py-1.5 rounded-full text-xs font-black mb-5 shadow-lg">
-              🔥 PROMO RAMADHAN 2026 — TERBATAS!
+              ⭐ TESTIMONI NYATA — KLIEN GROTIVY 2026
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
-              Mau Bikin PT Tapi Takut{" "}
-              <span className="text-red-400 underline decoration-wavy decoration-red-400/60">
-                Kena Tipu & Uang Hilang?
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-3">
+              "Setelah Pakai Jasa PT Grotivy Selama{" "}
+              <span className="text-yellow-400">2 Hari</span>,{" "}
+              Bisnis Saya Langsung{" "}
+              <span className="text-[#5FBDBE] underline decoration-wavy decoration-[#5FBDBE]/60">
+                Menang Tender Rp 800 Juta"
               </span>
             </h1>
+            <p className="text-yellow-300 text-sm font-semibold mb-4 italic">
+              — Bpk. Kurniawan, Founder PT Sinergi Infiniti Sejahtera Bersama ⭐⭐⭐⭐⭐
+            </p>
           </motion.div>
 
           {/* ── (2) SUB-HEADLINE ── */}
@@ -365,10 +369,10 @@ export function LandingPT() {
             transition={{ delay: 0.15 }}
             className="text-lg text-gray-200 max-w-xl mx-auto mb-8 leading-relaxed"
           >
-            Tenang! Cara bikin PT sekarang bisa{" "}
-            <span className="text-[#5FBDBE] font-black">tanpa DP, tanpa antri, tanpa bolak-balik kantor</span>
-            {" "}— cukup chat, semua dokumen beres{" "}
-            <strong className="text-white">1–2 hari kerja</strong> dan dikirim ke rumah Anda.
+            Bisnis Anda butuh legalitas yang kuat agar bisa{" "}
+            <span className="text-[#5FBDBE] font-black">tembus klien besar, menangkan tender, dan aset keluarga terlindungi sepenuhnya</span>
+            {" "}— kami urus semuanya dalam{" "}
+            <strong className="text-white">1–2 hari kerja</strong>, bayar setelah PT jadi.
           </motion.p>
 
           {/* ── (3) IMAGE MOCKUP ── */}
@@ -432,24 +436,28 @@ export function LandingPT() {
           >
             <p className="text-red-300 font-black text-center mb-3 flex items-center justify-center gap-2">
               <AlertCircle className="w-5 h-5" />
-              ⚠️ MAKIN LAMA BISNIS TANPA PT, MAKIN RUGI!
+              ⚠️ 5 KERUGIAN NYATA BISNIS TANPA PT
             </p>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="space-y-2.5 text-sm text-gray-300">
               <li className="flex items-start gap-2">
-                <span className="text-red-400 font-black mt-0.5">✗</span>
-                <span>Klien besar <strong className="text-white">tidak mau transfer ke rekening pribadi</strong> — bisnis stagnasi</span>
+                <span className="text-red-400 font-black mt-0.5 flex-shrink-0">✗</span>
+                <span><strong className="text-white">Rekening pribadi = stagnasi bisnis.</strong> Klien korporat menolak transfer personal — omzet mentok, kepercayaan nol.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-400 font-black mt-0.5">✗</span>
-                <span>Tender pemerintah & korporat <strong className="text-white">tertutup</strong> karena tidak punya legalitas</span>
+                <span className="text-red-400 font-black mt-0.5 flex-shrink-0">✗</span>
+                <span><strong className="text-white">Tender pemerintah & proyek besar tertutup rapat.</strong> Tanpa NIB & SK Kemenkumham, penawaran Anda tidak pernah sampai meja keputusan.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-400 font-black mt-0.5">✗</span>
-                <span>Aset & harta keluarga <strong className="text-white">ikut terseret</strong> jika ada masalah hutang bisnis</span>
+                <span className="text-red-400 font-black mt-0.5 flex-shrink-0">✗</span>
+                <span><strong className="text-white">Rumah & tabungan keluarga jadi taruhan bisnis.</strong> Tanpa PT, hutang bisnis bisa menyita aset pribadi Anda secara hukum.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-red-400 font-black mt-0.5">✗</span>
-                <span>Tidak bisa mengajukan <strong className="text-white">PINJAMAN BANK</strong> — bisnis Anda susah berkembang karena bank butuh legalitas</span>
+                <span className="text-red-400 font-black mt-0.5 flex-shrink-0">✗</span>
+                <span><strong className="text-white">Pinjaman modal bank ditolak berulang.</strong> Bank mensyaratkan badan hukum resmi — tanpa PT, ekspansi bisnis selalu terhambat modal.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-400 font-black mt-0.5 flex-shrink-0">✗</span>
+                <span><strong className="text-white">Mengurus sendiri = waktu terbuang & biaya tak terduga.</strong> Birokrasi berbelit, dokumen ditolak, biaya hidden yang muncul tiba-tiba.</span>
               </li>
             </ul>
           </motion.div>
@@ -461,7 +469,7 @@ export function LandingPT() {
             transition={{ delay: 0.45 }}
             className="space-y-4"
           >
-            <WAButton text="KLAIM PROMO SEKARANG — BAYAR SETELAH JADI →" />
+            <WAButton text="Saya Mau Amankan Bisnis Saya Sekarang →" />
             <p className="text-gray-400 text-sm">
               📞 <a href="tel:+6283861537366" className="text-[#5FBDBE] font-semibold hover:underline">+62 838-6153-7366</a>
               {" "}· Respon dalam 5 menit · 500+ klien puas
@@ -501,15 +509,15 @@ export function LandingPT() {
             </div>
 
             <h2 className="text-3xl font-black mb-6">
-              Mengurus Izin Sendiri Itu Bikin{" "}
-              <span className="text-red-400">Pusing, Mahal, dan Lama...</span>
+              Pengusaha Sukses Tidak{" "}
+              <span className="text-red-400">Menghabiskan Waktunya di Kantor Dinas</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
               {[
-                { emoji: "😵", label: "Birokrasi Berbelit", desc: "Bolak-balik instansi, antri panjang, dokumen ditolak berulang kali" },
-                { emoji: "💸", label: "Biaya Membengkak", desc: "Biaya jasa tidak transparan, muncul tagihan baru di tengah proses" },
-                { emoji: "⏰", label: "Buang Waktu Berbulan-bulan", desc: "Proses berlarut membuat Anda tidak bisa fokus mengembangkan bisnis" },
+                { emoji: "😤", label: "Antri Berjam-jam, Ditolak Berkali-kali", desc: "Dokumen kurang ini, kurang itu — bolak-balik instansi menghabiskan energi dan hari kerja Anda" },
+                { emoji: "💸", label: "Biaya Tak Transparan, Tagihan Mengejutkan", desc: "Sudah bayar di depan, tiba-tiba muncul biaya tambahan yang tidak pernah disebutkan sebelumnya" },
+                { emoji: "🗓️", label: "Proses Berlarut, Bisnis Tertahan", desc: "Setiap hari tanpa legalitas adalah hari yang Anda lewatkan dari peluang tender dan klien besar" },
               ].map((p) => (
                 <div key={p.label} className="bg-white/5 rounded-2xl p-6 border border-white/10">
                   <div className="text-4xl mb-3">{p.emoji}</div>
@@ -522,15 +530,15 @@ export function LandingPT() {
             <div className="text-[#5FBDBE] text-3xl font-black mb-4">↓ SOLUSINYA ↓</div>
 
             <div className="bg-gradient-to-r from-[#5FBDBE]/20 to-[#2C5F6F]/20 border border-[#5FBDBE]/40 rounded-3xl p-8">
-              <div className="text-4xl mb-4">🚀</div>
+              <div className="text-4xl mb-4">🛡️</div>
               <h3 className="text-2xl font-black text-[#5FBDBE] mb-4">
-                Jasa Pembuatan PT Full Service
+                Jasa PT Full Service Grotivy Consultant
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Layanan <strong className="text-white">POWERFUL</strong> yang memangkas waktu birokrasi{" "}
-                <span className="text-yellow-400 font-bold">berbulan-bulan menjadi hitungan hari</span>,
-                sehingga Anda bisa <strong className="text-white">fokus jualan dan membesarkan omzet</strong>{" "}
-                tanpa terganggu urusan administrasi.
+                Anda <strong className="text-white">fokus berbisnis</strong>, kami yang urus semua dokumen legal dari A–Z.{" "}
+                <span className="text-yellow-400 font-bold">Proses berbulan-bulan tuntas dalam 1–2 hari kerja</span>,
+                harga transparan tanpa hidden cost, bayar setelah PT jadi —{" "}
+                sehingga bisnis Anda <strong className="text-white">langsung legal, dipercaya klien besar, dan keluarga terlindungi.</strong>
               </p>
             </div>
           </motion.div>
@@ -541,12 +549,12 @@ export function LandingPT() {
       <section data-track-section="manfaat_pt" className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-[#5FBDBE] font-bold uppercase tracking-wider text-sm">Kenapa Perlu PT?</span>
+            <span className="text-[#5FBDBE] font-bold uppercase tracking-wider text-sm">5 Alasan Logis Mengapa Bisnis Anda Butuh PT</span>
             <h2 className="text-3xl font-black text-gray-900 mt-2">
-              Yang Akan Anda Dapatkan Jika Bisnis
-              <br />
-              <span className="text-[#2C5F6F]">Sudah Berbadan Hukum Resmi (PT) Perorangan</span>
+              Setiap Masalah Bisnis Anda Punya{" "}
+              <span className="text-[#2C5F6F]">Solusi Konkret dari Status PT Resmi</span>
             </h2>
+            <p className="text-gray-500 mt-2 text-sm max-w-lg mx-auto">Bukan sekadar formalitas — ini adalah senjata bisnis yang mengubah cara klien, bank, dan pemerintah memandang Anda.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -586,16 +594,17 @@ export function LandingPT() {
             className="mb-8"
           >
             <div className="inline-block bg-red-100 text-red-600 text-xs font-black px-4 py-1.5 rounded-full mb-5 tracking-wide">
-              😤 MASALAH YANG RELATE BANGET
+              🎯 MENGAPA GROTIVY BERBEDA?
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight">
-              Sama seperti kamu, <span className="text-[#2C5F6F]">PENGUSAHA SUKSES</span>{" "}
-              juga tidak mau mengurus PT yang{" "}
-              <span className="text-red-500 underline decoration-wavy">RIBET, LAMA, DAN BERBELIT</span>
+              Pengusaha Sibuk Seperti Anda{" "}
+              <span className="text-[#2C5F6F]">Tidak Punya Waktu</span>{" "}
+              untuk Urusan{" "}
+              <span className="text-red-500 underline decoration-wavy">Birokrasi yang Berbelit dan Membuang Energi</span>
             </h2>
           </motion.div>
 
-          {/* ── (9) IMAGE MOCKUP ── */}
+          {/* ── (9) IMAGE PRODUK ── */}
           <motion.div
             initial={{ opacity: 0, scale: 0.93 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -603,39 +612,12 @@ export function LandingPT() {
             transition={{ delay: 0.15 }}
             className="relative mb-8"
           >
-            {/* Stack mockup effect — 3 "document cards" */}
-            <div className="relative mx-auto w-full max-w-sm">
-              {/* Shadow card belakang kanan */}
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 translate-x-6 w-[88%] h-full bg-[#5FBDBE]/20 rounded-3xl border-2 border-[#5FBDBE]/30 rotate-3" />
-              {/* Shadow card belakang kiri */}
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 -translate-x-6 w-[88%] h-full bg-[#2C5F6F]/15 rounded-3xl border-2 border-[#2C5F6F]/20 -rotate-3" />
-
-              {/* Kartu utama */}
-              <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-[#5FBDBE]/50 z-10">
-                {/* Header kartu */}
-                <div className="bg-gradient-to-r from-[#2C5F6F] to-[#5FBDBE] px-6 py-4 flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-white/70 text-xs">Grotivy Consultant</p>
-                    <p className="text-white font-black text-sm">PAKET PENDIRIAN PT LENGKAP</p>
-                  </div>
-                  <div className="ml-auto bg-green-400 text-white text-xs font-black px-2 py-1 rounded-full">RESMI</div>
-                </div>
-
-                {/* Foto Produk Asli */}
-                <img
-                  src=/Produk.jpg
-                  alt="Paket Pendirian PT Lengkap - SK Kemenkumham, NIB, NPWP, Rekening Perusahaan"
-                  className="w-full object-cover"
-                />
-              </div>
-
-              {/* Floating label */}
-              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-gray-900 text-xs font-black px-5 py-2 rounded-full shadow-lg whitespace-nowrap z-20">
-                ⚡ SELESAI DALAM 1–2 HARI KERJA
-              </div>
+            <div className="mx-auto w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="/Produk.jpg"
+                alt="Paket Pendirian PT Lengkap - Grotivy Consultant"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </motion.div>
 
@@ -647,25 +629,52 @@ export function LandingPT() {
             transition={{ delay: 0.25 }}
             className="mt-10 bg-gradient-to-br from-[#f0fafa] to-white border-2 border-[#5FBDBE]/40 rounded-3xl p-7 text-left shadow-sm mb-8"
           >
-            <p className="text-gray-700 text-lg leading-relaxed text-center">
-              Layanan{" "}
-              <span className="font-black text-[#2C5F6F]">FULL SERVICE yang mengurus SEMUA dokumen PT dari A–Z</span>{" "}
-              <span className="text-gray-400 italic text-sm">(fitur)</span>
-              , namun sangat{" "}
-              <span className="font-black text-[#5FBDBE]">POWERFUL untuk memangkas proses berbulan-bulan menjadi hanya 1–2 hari kerja</span>{" "}
-              <span className="text-gray-400 italic text-sm">(benefit)</span>
-              , sehingga bisnis Anda{" "}
-              <span className="font-black text-green-600">LANGSUNG LEGAL, profesional, dan siap tembus klien serta pasar yang lebih besar</span>{" "}
-              <span className="text-gray-400 italic text-sm">(meaning)</span>
-              .
-            </p>
+            {/* 6 Magic Template Copy */}
+            <div className="space-y-4 text-left">
+              <div className="flex items-start gap-3">
+                <span className="w-7 h-7 rounded-full bg-[#2C5F6F] text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">1</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <strong className="text-[#2C5F6F]">Jasa Pembuatan PT Grotivy Consultant</strong> adalah layanan pendirian perusahaan berbadan hukum resmi untuk pengusaha Indonesia.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="w-7 h-7 rounded-full bg-[#2C5F6F] text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">2</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Dengan sistem <strong className="text-[#2C5F6F]">Full Service A–Z</strong> — kami mengurus SK Kemenkumham, NIB, NPWP, rekening perusahaan, hingga pengiriman dokumen fisik ke rumah Anda.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="w-7 h-7 rounded-full bg-[#5FBDBE] text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">3</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Artinya, <strong className="text-[#5FBDBE]">proses yang biasanya memakan waktu berbulan-bulan kini selesai hanya dalam 1–2 hari kerja</strong> — tanpa Anda perlu antri, bolak-balik kantor, atau paham birokrasi.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="w-7 h-7 rounded-full bg-[#5FBDBE] text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">4</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Bisnis Anda <strong className="text-[#5FBDBE]">langsung sah di mata hukum</strong>, bisa membuka rekening PT, mengikuti tender, dan mengajukan pinjaman modal ke bank.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="w-7 h-7 rounded-full bg-green-600 text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">5</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Anda bisa <strong className="text-green-700">langsung menandatangani kontrak korporat, memenangkan tender besar, dan mengakses modal perbankan</strong> yang selama ini tertutup.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="w-7 h-7 rounded-full bg-green-600 text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">6</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Dan yang paling berharga — <strong className="text-green-700">Anda bisa tidur nyenyak malam ini</strong> karena bisnis sudah resmi, harta keluarga terlindungi secara hukum, dan masa depan finansial Anda kini berada di jalur yang benar.
+                </p>
+              </div>
+            </div>
 
             {/* Visual FBM breakdown */}
             <div className="grid grid-cols-3 gap-3 mt-6">
               {[
-                { label: "FITUR", color: "bg-blue-100 border-blue-300 text-blue-700", icon: "⚙️", desc: "Full service A–Z, semua dokumen diurus" },
-                { label: "BENEFIT", color: "bg-teal-100 border-teal-300 text-teal-700", icon: "⚡", desc: "Proses berbulan-bulan jadi 1–2 hari" },
-                { label: "MEANING", color: "bg-green-100 border-green-300 text-green-700", icon: "🚀", desc: "Bisnis legal & siap naik kelas" },
+                { label: "FITUR", color: "bg-blue-100 border-blue-300 text-blue-700", icon: "⚙️", desc: "Full service A–Z, semua dokumen diurus tanpa Anda repot" },
+                { label: "BENEFIT", color: "bg-teal-100 border-teal-300 text-teal-700", icon: "⚡", desc: "Proses berbulan-bulan tuntas hanya 1–2 hari kerja" },
+                { label: "MEANING", color: "bg-green-100 border-green-300 text-green-700", icon: "🛡️", desc: "Tidur nyenyak — bisnis legal, keluarga terlindungi" },
               ].map((f) => (
                 <div key={f.label} className={`${f.color} border rounded-2xl p-3 text-center`}>
                   <div className="text-2xl mb-1">{f.icon}</div>
@@ -683,9 +692,9 @@ export function LandingPT() {
             viewport={{ once: true }}
             transition={{ delay: 0.35 }}
           >
-            <WAButton text="Ya, Saya Mau PT Saya Jadi Hari Ini! →" />
+            <WAButton text="Saya Mau Amankan Bisnis Saya Sekarang →" />
             <p className="text-gray-400 text-sm mt-3">
-              💬 Chat langsung · Respon &lt; 5 menit · Gratis konsultasi
+              💬 Chat langsung · Respon &lt; 5 menit · Konsultasi GRATIS
             </p>
           </motion.div>
 
@@ -869,7 +878,7 @@ export function LandingPT() {
             <p className="text-gray-900 font-black text-sm mb-1 tracking-wide">TOTAL NILAI 3 BONUS DI ATAS</p>
             <p className="text-5xl font-black text-gray-900 mb-1">Rp 7.880.000</p>
             <p className="text-gray-800 text-sm mb-5">Semua ini GRATIS untuk Anda — tanpa syarat tambahan!</p>
-            <WAButton text="KLAIM SEMUA BONUS SEKARANG →" />
+            <WAButton text="Klaim Bonus & Amankan Bisnis Saya →" />
           </motion.div>
 
         </div>
@@ -964,7 +973,7 @@ export function LandingPT() {
               <span className="text-[#2C5F6F] font-black">ratusan testimoni lainnya</span>{" "}
               yang sangat memuaskan… ⭐
             </p>
-            <WAButton text="Saya Juga Mau Seperti Mereka →" size="sm" />
+            <WAButton text="Saya Mau Amankan Bisnis Saya Sekarang →" size="sm" />
           </motion.div>
 
         </div>
@@ -1083,8 +1092,8 @@ export function LandingPT() {
               {/* Foto dokumen utama */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1715173679369-18006e84d6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGxlZ2FsJTIwZG9jdW1lbnRzJTIwY2VydGlmaWNhdGUlMjBzdGFtcCUyMG5vdGFyeXxlbnwxfHx8fDE3NzE1ODk0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Dokumen PT Resmi"
+                  src="/Dokumen.jpg"
+                  alt="Legal Document Grotivy Consultant - Dokumen PT Resmi"
                   className="w-full h-72 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d2e3a]/90 via-[#0d2e3a]/40 to-transparent" />
@@ -1202,21 +1211,42 @@ export function LandingPT() {
             className="border-2 border-red-500 rounded-xl overflow-hidden"
           >
             <div className="bg-red-500 text-white text-center py-3 px-4">
-              <p className="font-black text-sm tracking-wide">Total yang akan kamu dapatkan</p>
+              <p className="font-black text-sm tracking-wide">🔥 PROMO RAMADHAN 2026 — HARGA SPESIAL HARI INI</p>
             </div>
             <div className="bg-white p-6 text-center">
-              <p className="text-gray-500 text-sm mb-1">Senilai</p>
-              <p className="text-gray-400 line-through text-2xl font-black mb-4">Rp 6.880.000</p>
+              {/* Anchor Price */}
+              <p className="text-gray-500 text-xs mb-1 uppercase tracking-wider">Harga Normal Pasaran</p>
+              <p className="text-gray-400 line-through text-2xl font-black mb-1">Rp 6.880.000</p>
+              {/* Reason for Discount */}
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg px-4 py-2 mb-4">
+                <p className="text-yellow-700 text-xs font-semibold">
+                  🎯 Alasan Diskon: Promo Ramadhan 2026 untuk mendukung pengusaha Indonesia naik kelas — <strong>kuota terbatas!</strong>
+                </p>
+              </div>
               <div className="border-t border-dashed border-gray-200 pt-4 mb-4">
-                <p className="text-gray-700 font-black text-base mb-2">Menjadi Hanya</p>
+                <p className="text-gray-700 font-black text-base mb-2">Harga Promo Hari Ini</p>
                 <p className="text-gray-400 line-through text-lg font-semibold mb-2">Rp 5.580.000</p>
-                <div className="inline-block bg-red-500 text-white rounded-lg px-8 py-3">
+                {/* Final Price */}
+                <div className="inline-block bg-red-500 text-white rounded-lg px-8 py-3 mb-3">
+                  <p className="text-xs opacity-80 mb-0.5">Bayar Hanya</p>
                   <p className="font-black text-3xl">Rp 1.845.000</p>
                 </div>
+                {/* Total Savings */}
+                <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-2 mb-3">
+                  <p className="text-green-700 font-black text-sm">
+                    💰 Anda Hemat <strong>Rp 5.035.000</strong> (Penghematan 73%!)
+                  </p>
+                </div>
+                {/* Trivialization */}
+                <div className="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2">
+                  <p className="text-blue-700 text-xs leading-relaxed">
+                    💡 <strong>Setara biaya makan malam bisnis 3–4 kali</strong> atau langganan kopi premium 2 bulan — tapi hasilnya? <strong>PT resmi yang mengubah bisnis Anda selamanya.</strong>
+                  </p>
+                </div>
               </div>
-              <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-2 mt-4">
+              <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-2 mt-2">
                 <p className="text-red-600 font-black text-sm">
-                  Diskon 73% hanya <span className="uppercase">BERLAKU HARI INI SAJA!</span>
+                  ⚠️ Harga ini <span className="uppercase">berlaku hari ini saja</span> — dan BAYAR SETELAH PT JADI!
                 </p>
               </div>
             </div>
@@ -1294,7 +1324,7 @@ export function LandingPT() {
                 </svg>
               </span>
               <span className="flex-1 text-center text-sm py-4 px-3 uppercase tracking-wide">
-                AKU INGIN KLAIM PROMO PENDIRIAN PT SEKARANG!
+                SAYA MAU AMANKAN BISNIS SAYA SEKARANG!
               </span>
             </a>
           </motion.div>
@@ -1313,35 +1343,32 @@ export function LandingPT() {
             viewport={{ once: true }}
             className="border border-gray-300 rounded-sm px-6 py-8 space-y-5 text-center"
           >
-            <p className="font-black text-gray-900 text-base">Bayangkan...</p>
+            <p className="font-black text-gray-900 text-base">Bayangkan sejenak...</p>
 
             <p className="text-gray-700 text-sm leading-relaxed">
-              Kita selalu percaya bahwa{" "}
-              <strong className="text-red-600">waktu adalah hal yang lebih berharga daripada uang</strong>,
-              betul? Karena{" "}
-              <span className="underline">waktu yang terlewat tidak bisa didapatkan kembali</span>.
+              Besok pagi, klien besar menghubungi Anda untuk proyek senilai ratusan juta. Mereka bertanya:{" "}
+              <strong className="text-red-600 italic">"Bisa kirim invoice atas nama PT-nya?"</strong>
             </p>
 
             <p className="text-gray-700 text-sm leading-relaxed">
-              Lantas, kenapa kita seringkali{" "}
-              <strong className="italic">membuang-buang waktu berbisnis tanpa badan hukum yang jelas?</strong>
+              Apakah saat itu Anda sudah siap — atau terpaksa{" "}
+              <strong className="italic">melihat peluang itu berlalu begitu saja</strong> karena bisnis Anda belum berbadan hukum?
             </p>
 
             <p className="text-gray-700 text-sm leading-relaxed">
-              Aku ingin kamu memiliki{" "}
-              <strong className="text-red-600">PT yang resmi & legal</strong> agar kamu{" "}
-              <span className="text-blue-600">bisa ekspansi, menangkan tender besar, dan dipercaya klien korporat</span>.
+              Dan bayangkan ini: Suatu hari ada masalah dalam bisnis. Tanpa PT,{" "}
+              <strong className="text-red-600">hukum bisa menyentuh aset pribadi Anda — rumah, kendaraan, tabungan keluarga</strong>.{" "}
+              <span className="underline">Keluarga yang tidak ada hubungannya dengan bisnis, ikut menanggung risikonya.</span>
             </p>
 
             <p className="text-gray-700 text-sm leading-relaxed">
-              Investasi sebesar{" "}
-              <strong>Rp 1.845.000</strong> akan menjadi{" "}
-              <span className="underline">tidak ternilai</span> jika dibandingkan dengan{" "}
-              <strong>kerugian bisnis akibat tidak punya legalitas.</strong>
+              <strong>Rp 1.845.000</strong> hari ini adalah{" "}
+              <span className="underline">tembok pelindung antara risiko bisnis dan keamanan keluarga Anda</span>.{" "}
+              Ini bukan pengeluaran — ini <strong className="text-green-700">investasi ketenangan pikiran</strong>.
             </p>
 
-            <p className="text-gray-700 text-sm">
-              Buatlah pilihanmu sekarang juga.
+            <p className="text-gray-700 text-sm font-semibold">
+              Pilihan ada di tangan Anda. Ambil langkah itu sekarang.
             </p>
           </motion.div>
 
@@ -1369,7 +1396,7 @@ export function LandingPT() {
                 </svg>
               </span>
               <span className="flex-1 text-center text-sm py-4 px-3 uppercase tracking-wide">
-                YA, SAYA MAU DIRIKAN PT SEKARANG!
+                SAYA MAU AMANKAN BISNIS & KELUARGA SAYA SEKARANG!
               </span>
             </a>
           </motion.div>
@@ -1380,10 +1407,13 @@ export function LandingPT() {
       <section data-track-section="faq" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-[#5FBDBE] font-bold uppercase tracking-wider text-sm">FAQ</span>
+            <span className="text-[#5FBDBE] font-bold uppercase tracking-wider text-sm">FAQ — Jawaban Jujur Tanpa Basa-Basi</span>
             <h2 className="text-3xl font-black text-gray-900 mt-2">
-              Pertanyaan yang Ada di Pikiran Anda
+              Kekhawatiran Anda Wajar — Kami Jawab Tuntas
             </h2>
+            <p className="text-gray-500 mt-2 max-w-lg mx-auto text-sm">
+              Dari soal harga transparan, kecepatan proses, hingga "saya tidak paham teknologi" — semuanya kami jawab di sini.
+            </p>
           </div>
 
           <div className="space-y-4">
@@ -1402,15 +1432,18 @@ export function LandingPT() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="text-6xl mb-6">🏆</div>
+            <div className="text-6xl mb-6">🛡️</div>
             <h2 className="text-3xl font-black mb-4">
-              Jadikan Bisnis Anda Resmi & Bonafit
-              <br />Mulai Hari Ini!
+              Lindungi Keluarga, Besarkan Bisnis —
+              <br /><span className="text-yellow-300">Mulai dari Satu Langkah Hari Ini</span>
             </h2>
-            <p className="text-white/90 text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-white/90 text-lg mb-3 max-w-xl mx-auto">
               Bergabung dengan <strong>500+ pengusaha Indonesia</strong> yang sudah mempercayakan legalitas bisnisnya kepada Grotivy Consultant.
             </p>
-            <WAButton text="KONSULTASI GRATIS SEKARANG →" />
+            <p className="text-white/70 text-sm mb-8 max-w-md mx-auto italic">
+              "Satu keputusan malam ini bisa mengubah nasib bisnis Anda dalam 2 hari ke depan."
+            </p>
+            <WAButton text="Saya Mau Amankan Bisnis Saya Sekarang →" />
             <div className="mt-6 flex flex-wrap justify-center gap-6 text-white/80 text-sm">
               <span>📞 +62 838-6153-7366</span>
               <span>🌐 grotivyconsultant.my.id</span>
