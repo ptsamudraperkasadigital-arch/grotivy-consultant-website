@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router";
+import { Shield, Clock, FileText, CheckCircle, Star, Check, ArrowRight } from "lucide-react";
 import { SEO, buildBreadcrumbSchema, buildServiceSchema } from "../components/SEO";
 
 export function PendirianPerusahaan() {
