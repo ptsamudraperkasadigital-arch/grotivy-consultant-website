@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, CheckCircle2 } from "lucide-react";
-import heroImage from "figma:asset/a1db49c5a0d8bd34cd282ada977824c32c957c5e.png";
-import legalDocImage from "figma:asset/ca32959bd4491a192b0cd09cbd662440a85235ff.png";
 
 // ─── TRACKING ────────────────────────────────────────────────────────────────
 declare global {
@@ -209,17 +207,17 @@ export function LandingPT() {
     {
       photo: "/testimoni-kurniawan.jpg",
       text: "Awalnya sempet ragu, kok bikin PT murah banget biasanya sampe 10 Juta ini dapet PROMO Ramadhan cuma 2 jt-an. Eh ternyata beneran jadi dong!\n\nSaya sudah punya PT sendiri, bisa buka rekening BCA perusahaan juga. Gak nyangka banget! Padahal bisnis masih rumahan. Makasih Grotivy Consultant...",
-      name: "Bu Mala", location: "Palembang",
+      name: "Pak Kurniawan",
     },
     {
       photo: "/testimoni-fauz.jpg",
       text: "Setelah bisnis saya punya PT saya jadi aman tanpa perlu khawatir dalam menjalankan bisnis. Proses cepat banget 1 hari sudah jadi. Saya jadi Pede buat nawarin kerja sama bisnis ke temen. Terima kasih Grotivy!",
-      name: "Pak Udien", location: "Bandung",
+      name: "Pak Fauz",
     },
     {
       photo: "/testimoni-isrodni.jpg",
       text: "Karna udah punya PT saya jadi gampang dapet suntikan modal tambahan. Ditambah gampang banget buat ikut tender pemerintah. Wah ga nyangka sih, bagus banget pelayanan Grotivy ini.. Untungnya saya dapet harga diskon jadi lebih murah.. hahaha",
-      name: "Pak Ahmad", location: "Jogjakarta",
+      name: "Pak Isrodni",
     },
   ];
 
@@ -230,7 +228,7 @@ export function LandingPT() {
       {/* ── TOP BAR ── */}
       <div className="sticky top-0 z-50 bg-white border-b border-gray-100">
         <div className="max-w-[520px] mx-auto px-5 py-3 flex items-center justify-between">
-          <img src="/logo.png" alt="Grotivy Consultant" className="h-8" />
+          <img src="/logo.png" alt="Grotivy Consultant" className="h-8 w-auto object-contain" />
           <a href="https://wa.me/6283861537366" target="_blank" rel="noopener noreferrer" onClick={trackLead}
             className="text-xs font-black flex items-center gap-1.5 transition-colors"
             style={{ color: TEAL }}
@@ -411,15 +409,13 @@ export function LandingPT() {
                 className="rounded-xl overflow-hidden border border-gray-200"
               >
                 <div className="bg-gray-50 w-full">
-                  <img src={t.photo} alt={`Testimoni ${t.name}`} className="w-full object-cover object-top" style={{ maxHeight: 280 }} />
+                  <img src={t.photo} alt={`Testimoni ${t.name}`} className="w-full h-auto object-cover" />
                 </div>
                 <div className="p-5">
                   <p className="text-gray-700 text-sm leading-relaxed mb-4 whitespace-pre-line italic">"{t.text}"</p>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-px bg-gray-300" />
                     <p className="font-black text-gray-900 text-sm">{t.name}</p>
-                    <span className="text-gray-300 text-xs">·</span>
-                    <p className="text-gray-500 text-sm">{t.location}</p>
                   </div>
                 </div>
               </motion.div>
@@ -436,7 +432,7 @@ export function LandingPT() {
 
           {/* Hero image */}
           <div className="rounded-xl overflow-hidden mb-5">
-            <img src={heroImage} alt="Grotivy PT Package" className="w-full h-auto object-cover" />
+            <img src="/Produk.jpg" alt="Grotivy PT Package" className="w-full h-auto object-cover" />
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -454,7 +450,7 @@ export function LandingPT() {
 
           {/* Legal doc image */}
           <div className="rounded-xl overflow-hidden mb-4">
-            <img src={legalDocImage} alt="Dokumen Legal PT Grotivy" className="w-full h-auto object-cover" />
+            <img src="/Dokumen.jpg" alt="Dokumen Legal PT Grotivy" className="w-full h-auto object-cover" />
           </div>
         </section>
 
@@ -536,7 +532,6 @@ export function LandingPT() {
             </p>
             <div className="flex items-center justify-center gap-3 mb-6">
               {[
-                { val: h, max: 24, label: "JAM"   },
                 { val: m, max: 60, label: "MENIT" },
                 { val: s, max: 60, label: "DETIK" },
               ].map((t, i) => {
@@ -580,7 +575,7 @@ export function LandingPT() {
       {/* ── FOOTER ── */}
       <footer className="border-t border-gray-100 bg-white py-10 mt-8">
         <div className="max-w-[520px] mx-auto px-5 text-center">
-          <img src="/logo.png" alt="Grotivy Consultant" className="h-8 mx-auto mb-5" />
+          <img src="/logo.png" alt="Grotivy Consultant" className="h-8 w-auto object-contain mx-auto mb-5" />
           <p className="font-black text-gray-900 mb-1">PT Samudra Perkasa Digital</p>
           <p className="text-gray-400 text-sm mb-1">Rekening BCA: 4452287432 a/n PT Samudra Perkasa Digital</p>
           <p className="text-gray-400 text-sm mb-7">One Stop Business Solution · Berdiri Sejak 2022</p>
